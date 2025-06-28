@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rice Type Classification</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">RICE TYPE CLASSIFICATION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Details Section -->
+    <section class="container mt-5 mb-5">
+        <h1 class="text-center mb-4">Details Page</h1>
+        <div class="text-center border p-4 rounded shadow-sm bg-light">
+            <h3 class="mb-3">Upload Your Image</h3>
+            <form action="/result" method="post" enctype="multipart/form-data">
+                <label for="image" class="form-label">Choose an image</label>
+                <input class="form-control mb-3" type="file" id="image" name="image" accept="image/*">
+                <button class="btn btn-danger" type="submit">Upload</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light p-4 text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Rice</h5>
+                <p>Identify rice types easily with our AI-powered tool.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Useful Links</h5>
+                <a href="#" class="text-light d-block">Home</a>
+                <a href="#" class="text-light d-block">About</a>
+                <a href="#" class="text-light d-block">Contact</a>
+            </div>
+            <div class="col-md-4">
+                <h5>Our Services</h5>
+                <a href="#" class="text-light d-block">Web Design</a>
+                <a href="#" class="text-light d-block">AI Tools</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
